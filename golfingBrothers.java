@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class golfingBrothers {
   public static double average(ArrayList<Integer> golfList) {
     double avg = 0.0;
@@ -29,5 +31,25 @@ public class golfingBrothers {
         return "craig";
       }
     }
+    return "haha mistake";
+  }
+
+  public static void main(String[]args) {
+    ArrayList<Integer> adam = new ArrayList<Integer>();
+    adam.add(1);
+    adam.add(2);
+    adam.add(3);
+
+    ArrayList<Integer> bob = new ArrayList<Integer>();
+    bob.add(4);
+    bob.add(5);
+    bob.add(6);
+
+    ArrayList<Integer> craig = new ArrayList<Integer>();
+    craig.add(7);
+    craig.add(8);
+    craig.add(9);
+
+    System.out.println(golfingBrothers(adam, bob, craig));
   }
 }
